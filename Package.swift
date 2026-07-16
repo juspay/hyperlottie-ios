@@ -13,13 +13,13 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "lottie-ios", url: "https://github.com/airbnb/lottie-ios.git", "3.5.0"..<"5.0.0"),
+        .package(name: "lottie-spm", url: "https://github.com/airbnb/lottie-spm.git", "4.0.0"..<"5.0.0"),
     ],
     targets: [
         .target(
             name: "HyperLottie",
             dependencies: [
-                .product(name: "Lottie", package: "lottie-ios"),
+                .product(name: "Lottie", package: "lottie-spm"),
             ],
             path: "Sources/HyperLottie",
         )
